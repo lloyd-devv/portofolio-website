@@ -3,137 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lloyd-devv-profile</title>
+    <title>Cyberpunk Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 </head>
 <body>
 
-    <div class="cyber-grid-bg"></div>
+    <div id="particle-container"></div>
 
     <div class="bento-container">
         
         <div class="card profile-card">
             <div class="profile-header">
                 <div class="image-wrapper">
-                    <img src="IMG_20250712_162512871_HDR.jpg" alt="Profile" class="avatar">
+                    <img src="https://ui-avatars.com/api/?name=Fauzan+Dev&background=00f7ff&color=000" alt="Profile" class="avatar">
                 </div>
                 <div class="status-badge">
-                    <span class="dot-neon"></span> Available for Work
+                    <span class="dot-neon"></span> Available
                 </div>
             </div>
             <div class="profile-info">
-                <h1>Muhammad Fatiha Farhan.</h1>
-                <h2>Fullstack Developer & UI Enthusiast</h2>
-                <p class="bio">Crafting digital experiences with code and neon pixels. Based in cyberspace.</p>
+                <h1>Fauzan Dev.</h1>
+                <h2>Fullstack Developer</h2>
+                <p class="bio">Building digital experiences with code and neon pixels. Based in cyberspace.</p>
             </div>
         </div>
 
         <div class="card map-card">
             <div class="card-icon neon-text"><i class="ri-map-pin-range-fill"></i></div>
-            <h3>Jakarta Sector</h3>
+            <h3>Jakarta, ID</h3>
             <div id="clock" class="live-clock neon-text">00:00:00</div>
         </div>
 
-        <a href="https://www.tiktok.com/@patihaparhan?is_from_webapp=1&sender_device=pc" class="card social-card instagram">
-            <i class="ri-tiktok-line"></i>
-        </a>
-        <a href="https://www.instagram.com/fattiih____/" class="card social-card instagram">
-            <i class="ri-instagram-fill"></i>
-        </a>
-        <a href="https://github.com/lloyd-devv" class="card social-card github">
-            <i class="ri-github-line"></i>
-        </a>
+        <a href="#" class="card social-card instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#" class="card social-card linkedin"><i class="ri-linkedin-fill"></i></a>
+        <a href="#" class="card social-card github"><i class="ri-github-line"></i></a>
 
-       <div class="card tech-card">
-    <h3>Tech Arsenal</h3>
-    <div class="marquee-wrapper">
-        <div class="marquee-content">
-            <i class="devicon-python-plain"></i>
-            <i class="devicon-lua-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-nodejs-plain"></i>
-            <i class="devicon-cplusplus-plain"></i>
-        </div>
-        
-        <div class="marquee-content" aria-hidden="true">
-            <i class="devicon-python-plain"></i>
-            <i class="devicon-lua-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-nodejs-plain"></i>
-            <i class="devicon-cplusplus-plain"></i>
-        </div>
-        
-    </div>
-</div>
-
-<div class="card game-card">
-    <div class="game-header">
-        <h3 class="neon-text">Neon Tetris</h3>
-        <div class="score-board">Score: <span id="score">0</span></div>
-    </div>
-    
-    <div class="canvas-wrapper">
-        <canvas id="tetrisCanvas" width="240" height="400"></canvas>
-        
-        <div id="gameOverlay" class="game-overlay">
-            <button id="startBtn" class="start-btn">START GAME</button>
-            <div class="controls-hint">
-                <p>⬅️ ➡️ Move</p>
-                <p>⬆️ Rotate</p>
-                <p>⬇️ Drop</p>
+        <div class="card tech-card">
+            <h3>Tech Arsenal</h3>
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <i class="devicon-python-plain"></i>
+                    <i class="devicon-lua-plain"></i>
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-nodejs-plain"></i>
+                    <i class="devicon-cplusplus-plain"></i>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <i class="devicon-python-plain"></i>
+                    <i class="devicon-lua-plain"></i>
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-nodejs-plain"></i>
+                    <i class="devicon-cplusplus-plain"></i>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
         <div class="card project-card">
-            <div class="card project-card">
-    <h3 class="section-title">Selected Projects <span class="dot-neon"></span></h3>
-    
-    <div class="project-list">
-        
-        <a href="#" class="project-item">
-            <div class="project-icon">
-                <i class="ri-computer-line"></i>
-            </div>
-            <div class="project-info">
-                <h4>Sistem Kasir (POS)</h4>
-                <p>C++, Database Management</p>
-            </div>
-            <div class="arrow-icon"><i class="ri-arrow-right-up-line"></i></div>
-        </a>
+            <h3 class="section-title">Selected Projects <span class="dot-neon"></span></h3>
+            <div class="project-list">
+                
+                <div class="project-item" onclick="openVideo('dQw4w9WgXcQ')">
+                    <div class="project-icon"><i class="ri-computer-line"></i></div>
+                    <div class="project-info">
+                        <h4>Sistem Kasir (POS)</h4>
+                        <p>C++ & Database</p>
+                    </div>
+                    <div class="arrow-icon"><i class="ri-play-circle-line"></i></div>
+                </div>
 
-        <a href="https://youtu.be/9dYfhua4og0?si=pGpuRCQCmDkNg122" class="project-item">
-            <div class="project-icon">
-                <i class="ri-shopping-bag-3-line"></i>
-            </div>
-            <div class="project-info">
-                <h4>Web Toko Online</h4>
-                <p>HTML, CSS, JS, Node.js</p>
-            </div>
-            <div class="arrow-icon"><i class="ri-arrow-right-up-line"></i></div>
-        </a>
+                <div class="project-item" onclick="openVideo('dQw4w9WgXcQ')">
+                    <div class="project-icon"><i class="ri-shopping-bag-3-line"></i></div>
+                    <div class="project-info">
+                        <h4>Web Toko Online</h4>
+                        <p>Fullstack JS</p>
+                    </div>
+                    <div class="arrow-icon"><i class="ri-play-circle-line"></i></div>
+                </div>
 
-        <a href="#" class="project-item">
-            <div class="project-icon">
-                <i class="ri-gamepad-fill"></i>
-            </div>
-            <div class="project-info">
-                <h4>Roblox Map Dev</h4>
-                <p>Lua Scripting, 3D Design</p>
-            </div>
-            <div class="arrow-icon"><i class="ri-arrow-right-up-line"></i></div>
-        </a>
+                <div class="project-item" onclick="openVideo('dQw4w9WgXcQ')">
+                    <div class="project-icon"><i class="ri-gamepad-fill"></i></div>
+                    <div class="project-info">
+                        <h4>Roblox Game Dev</h4>
+                        <p>Lua Scripting</p>
+                    </div>
+                    <div class="arrow-icon"><i class="ri-play-circle-line"></i></div>
+                </div>
 
-    </div>
-</div>
+            </div>
+        </div>
 
         <div class="card stats-card">
             <div class="stat-item">
@@ -142,7 +110,7 @@
             </div>
             <div class="stat-item">
                 <h4 class="neon-text">20+</h4>
-                <p>Projects Done</p>
+                <p>Projects</p>
             </div>
             <div class="stat-item">
                 <h4 class="neon-text">100%</h4>
@@ -154,38 +122,63 @@
             <div class="cta-content">
                 <i class="ri-mail-send-fill"></i>
                 <h3>Let's Collaborate</h3>
-                <p id="email-text">patihaparhan@gmail.com</p>
+                <p id="email-text">hello@fauzan.dev</p>
             </div>
         </div>
-       <div class="card terminal-card">
-    <div class="terminal-header">
-        <span class="term-dot red"></span>
-        <span class="term-dot yellow"></span>
-        <span class="term-dot green"></span>
-        <span class="term-title">root@portfolio:~</span>
-    </div>
-    <div class="terminal-body">
-        <div id="terminal-content">
-            <span class="cmd-line">> initializing system...</span>
-            <span class="cmd-line">> loading modules: [Python, Lua, C++]</span>
-            <span class="cmd-line success">> status: ONLINE</span>
-            <span class="cmd-line typing-cursor">> <span id="typing-text"></span></span>
+
+        <div class="card terminal-card">
+            <div class="terminal-header">
+                <span class="term-dot red"></span>
+                <span class="term-dot yellow"></span>
+                <span class="term-dot green"></span>
+                <span class="term-title">root@system:~</span>
+            </div>
+            <div class="terminal-body">
+                <div id="terminal-content">
+                    <span class="cmd-line">> init system...</span>
+                    <span class="cmd-line success">> status: ONLINE</span>
+                    <span class="cmd-line typing-cursor">> <span id="typing-text"></span></span>
+                </div>
+            </div>
         </div>
+
+        <div class="card game-card">
+            <div class="game-header">
+                <h3 class="neon-text">Neon Tetris</h3>
+                <div class="score-board">Score: <span id="score">0</span></div>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="tetrisCanvas" width="240" height="400"></canvas>
+                <div id="gameOverlay" class="game-overlay">
+                    <button id="startBtn" class="start-btn">START GAME</button>
+                    <div class="controls-hint">
+                        <p>⬅️ ➡️ Move</p>
+                        <p>⬆️ Rotate</p>
+                        <p>⬇️ Drop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
-    </div> 
 
     <footer class="cyber-footer">
         <p>
-            &copy; <span id="year"></span> <span class="neon-text">Lloyd-devv</span>. 
-            All Systems Operational. 
-            <i class="ri-wifi-line"></i>
+            &copy; <span id="year"></span> <span class="neon-text">Fauzan Dev</span>. 
+            All Systems Operational. <i class="ri-wifi-line"></i>
         </p>
     </footer>
 
+    <div id="videoModal" class="modal-overlay" onclick="closeVideo()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="videoPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="bg-animation.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
-</body>
-
 </html>
